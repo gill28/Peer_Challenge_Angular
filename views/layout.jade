@@ -1,0 +1,16 @@
+doctype html
+html(ng-app="etaApp")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js")
+    script(src="/javascripts/scripts.js")
+  body
+    ul
+      li
+        a(ng-href="#/channels") Channels
+      li
+        a(ng-href="#/wishlist") Wishlist
+
+    block content

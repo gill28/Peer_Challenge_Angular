@@ -1,0 +1,9 @@
+<form>
+    <label for="channelName">Channel Name</label>
+    <input type="text" name="name" ng-model="data.name" id="channelName">
+    <label for="channelPurpose">Channel Purpose</label>
+    <input type="text" name="purpose" ng-model="data.purpose" id="channelPurpose">
+    <input type="submit" value="Submit" ng-click="postChannel()">
+</form>
+
+<h3 ng-if="onPostSuccess"> Thank you for suggesting your channel!</h3>
